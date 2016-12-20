@@ -1,7 +1,7 @@
-## Пилотная методичка
+# Пилотная методичка
 
-### Пути
-> Путь - коротко говоря то, где расположен файл.
+### :minibus: Пути
+> :memo: Путь - коротко говоря то, где расположен файл.
 
 Представим, что у нас есть папка `foo/`, в которой есть другая папка `bar/`, в которой расположен файл `baz/`. Тогда путь для файла `baz/` будет выглядеть как `foo/bar/baz/`
 
@@ -22,9 +22,11 @@
 Символ `..` - указывает на директорию, находящуюся на уровень выше.
 Например, мы находимся в папке `foo/bar` . Для нас папка `..` будет `foo`. 
 
-Подробней про пути смотри по этой [ссылке](https://losst.ru/put-k-fajlu-v-linux)
+:book: Подробней про пути смотри по этой [ссылке](https://losst.ru/put-k-fajlu-v-linux)
 
-### Навигация по файловой системе
+
+### :runner: Навигация по файловой системе
+
 Для перехода по папкам используется команда `cd` (change directory - смени директорию).
 Примеры использования:
 
@@ -35,9 +37,11 @@
  - Перейти в директорию `foo/`, находясь в директорию `foo/bar/`: `cd ..`
  - Перейти в директорию `foo/baz/`, находясь в директорию `foo/bar/`: `cd ../baz`
 
-Подробней по команде `cd` смотри по этой [ссылке](https://www.google.ru/search?client=ubuntu&channel=fs&q=linux+cd&ie=utf-8&oe=utf-8&gfe_rd=cr&ei=PEVYWLCKB4KG7gS4xrHoAQ)
+:book: Подробней по команде `cd` смотри по этой [ссылке](https://www.google.ru/search?client=ubuntu&channel=fs&q=linux+cd&ie=utf-8&oe=utf-8&gfe_rd=cr&ei=PEVYWLCKB4KG7gS4xrHoAQ)
 
-### Просмотр содержимого директорий
+
+### :open_file_folder: Просмотр содержимого директорий
+
 Для просмотра содержимого директорий служит команда `ls` (От английского list - список)
 Примеры использования:
 
@@ -45,27 +49,54 @@
  - Просмотр содержимого директории `/var/log/`: `ls /var/log`
  - Просмотр содержимого директори `foo/baz/`, находясь в директории `foo/bar/`: `ls ../baz/`
 
-Подробней по команде `ls` смотри по этой [ссылке](https://www.google.ru/search?client=ubuntu&channel=fs&q=linux+ls&ie=utf-8&oe=utf-8&gfe_rd=cr&ei=3ERYWPvaHoKG7gS4xrHoAQ)
+:book: Подробней по команде `ls` смотри по этой [ссылке](https://www.google.ru/search?client=ubuntu&channel=fs&q=linux+ls&ie=utf-8&oe=utf-8&gfe_rd=cr&ei=3ERYWPvaHoKG7gS4xrHoAQ)
 
-### Создание файлов в консоли
+
+### :pencil2: Создание файлов в консоли
+
 Один из способов создания файлов в консоли - использование команды `touch` (прикосновение с английского)
 Пример:
 * `touch my_file.txt` - создаст в текущей папке пустой файл с названием `my_file.txt`
 * `touch foo/another_file.txt` - создаст в папке `./foo` файл `another_file.txt`
 
-Подробней по команде `touch` смотри по этой [ссылке](https://www.google.ru/search?client=ubuntu&channel=fs&q=linux+touch&ie=utf-8&oe=utf-8&gfe_rd=cr&ei=pkRYWLkpgobuBLjGsegB)
+:book: Подробней по команде `touch` смотри по этой [ссылке](https://www.google.ru/search?client=ubuntu&channel=fs&q=linux+touch&ie=utf-8&oe=utf-8&gfe_rd=cr&ei=pkRYWLkpgobuBLjGsegB)
 
-### Команда Echo
-Выводит в консоль переданный ей текст.
+
+### :file_folder: Создание директорий
+
+Для создания директорий используется команда `mkdir` (make dir - сделай директорию)
+Примеры:
+
+- создать папку `foo/`: `mkdir foo`
+- мы находимся в папке `foo/bar/`, создать папку `foo/baz`: `mkdir ../baz`
+
+Если необходимо создать последовательность директорий, стоит использовать команду `mkdir` с ключем `-p`:
+- мы находимся в папке в папке `foo/`, нам нужно создать директорию `foo/bar/baz/`. Используя команду без ключа -p нам пришлось бы выполнить две команды:
+
+1. `mkdir bar/` - создаём директорию `bar/`
+2. `mkdir bar/baz/` создаём директорию `baz/` в директории `bar/baz`
+
+Используя ключ `-p` достаточно выполнить одну:
+`mkdir -p bar/baz`
+
+:book: Подробней по команде `mkdir` смотри по этой [ссылке](https://www.google.ru/search?client=ubuntu&channel=fs&q=nook+djvu&ie=utf-8&oe=utf-8&gfe_rd=cr&ei=FV1ZWOLmJKW8zAWD3ZmYBw#newwindow=1&safe=off&channel=fs&q=linux+mkdir)
+
+### :balloon: Команда Echo
+
+Выводит в консоль (на самом деле в stdout, что это такое - читай ниже) переданный ей текст.
 `echo hello` выведет в консоль `hello`
 
 Важно помнить, что есть мы хотим вывести больше одного слова, стоит использовать ковычки:
-`echo "hello world!"` выведет в консоль `hello world!`
+`echo "hello world\!"` выведет в консоль `hello world\!`
 
-Более полные примеры смотри по этой [ссылке](https://www.google.ru/search?client=ubuntu&channel=fs&q=linux%20echo&ie=utf-8&oe=utf-8&gfe_rd=cr&ei=6j9YWOrzJpLHZLOMuaAE)
+(\ перед восклицательным знаком - так называемое экранирование)
 
-### Стандартные потоки
-> В средах UNIX/Linux существует такое понятие, как стандартные потоки
+:book: Более полные примеры смотри по этой [ссылке](https://www.google.ru/search?client=ubuntu&channel=fs&q=linux%20echo&ie=utf-8&oe=utf-8&gfe_rd=cr&ei=6j9YWOrzJpLHZLOMuaAE)
+
+
+### :barber: Стандартные потоки
+
+> :memo: В средах UNIX/Linux существует такое понятие, как стандартные потоки
 
 У каждой программы существует 3 потока данных:
 
@@ -73,11 +104,16 @@
  - `stdout`
  - `stderr`
  
- Информацию о них можешь найти по этой [ссылке](https://habrahabr.ru/post/55136/)
+ :book: Информацию о них можешь найти по этой [ссылке](https://habrahabr.ru/post/55136/)
 
-### Создание файлов (и наполнение их текстом) (Часть 2)
+### :pencil2: Создание файлов (и наполнение их текстом) (Часть 2)
+
 Теперь, прочев про потоки данных мы можем сделать следующее: перенаправить поток `stdout` команды `echo` в новый файл:
 `echo "hello" > new_file.txt`
 
 Открыв файл, мы увидим текст `hello`
-Чтобы добавить к тексту `word`, выполним команду `echo " word" >> new_file.txt`. После выполнения этой команды содержимое файла станет `hello world`.
+Чтобы добавить к тексту `word`, выполним команду `echo "word" >> new_file.txt`. После выполнения этой команды содержимое файла станет 
+```
+hello
+world
+```
