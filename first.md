@@ -24,6 +24,7 @@
 
 :book: Подробней про пути смотри по этой [ссылке](https://losst.ru/put-k-fajlu-v-linux)
 
+<hr>
 
 ### :runner: Навигация по файловой системе
 
@@ -39,6 +40,7 @@
 
 :book: Подробней по команде `cd` смотри по этой [ссылке](https://www.google.ru/search?client=ubuntu&channel=fs&q=linux+cd&ie=utf-8&oe=utf-8&gfe_rd=cr&ei=PEVYWLCKB4KG7gS4xrHoAQ)
 
+<hr>
 
 ### :open_file_folder: Просмотр содержимого директорий
 
@@ -51,6 +53,7 @@
 
 :book: Подробней по команде `ls` смотри по этой [ссылке](https://www.google.ru/search?client=ubuntu&channel=fs&q=linux+ls&ie=utf-8&oe=utf-8&gfe_rd=cr&ei=3ERYWPvaHoKG7gS4xrHoAQ)
 
+<hr>
 
 ### :pencil2: Создание файлов в консоли
 
@@ -61,6 +64,7 @@
 
 :book: Подробней по команде `touch` смотри по этой [ссылке](https://www.google.ru/search?client=ubuntu&channel=fs&q=linux+touch&ie=utf-8&oe=utf-8&gfe_rd=cr&ei=pkRYWLkpgobuBLjGsegB)
 
+<hr>
 
 ### :file_folder: Создание директорий
 
@@ -81,6 +85,8 @@
 
 :book: Подробней по команде `mkdir` смотри по этой [ссылке](https://www.google.ru/search?client=ubuntu&channel=fs&q=nook+djvu&ie=utf-8&oe=utf-8&gfe_rd=cr&ei=FV1ZWOLmJKW8zAWD3ZmYBw#newwindow=1&safe=off&channel=fs&q=linux+mkdir)
 
+<hr>
+
 ### :balloon: Команда Echo
 
 Выводит в консоль (на самом деле в stdout, что это такое - читай ниже) переданный ей текст.
@@ -93,6 +99,7 @@
 
 :book: Более полные примеры смотри по этой [ссылке](https://www.google.ru/search?client=ubuntu&channel=fs&q=linux%20echo&ie=utf-8&oe=utf-8&gfe_rd=cr&ei=6j9YWOrzJpLHZLOMuaAE)
 
+<hr>
 
 ### :barber: Стандартные потоки
 
@@ -105,6 +112,8 @@
  - `stderr`
  
  :book: Информацию о них можешь найти по этой [ссылке](https://habrahabr.ru/post/55136/)
+
+<hr>
 
 ### :pencil2: Создание файлов (и наполнение их текстом) (Часть 2)
 
