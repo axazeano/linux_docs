@@ -39,10 +39,10 @@
 ![man cat](imgs/man_cat.png)
 
 Утилита `cat` не только конкатенирует файлы, но и печатает их на консоль, чем собственно мы и воспользуемся. Если мы передадим всего один файл в эту утилиту, то она просто напечатает его на экране (и впрямь, конкатенировать его ведь не с чем):
-{cat_first_example}
+![cat first example](imgs/cat_first_example.png)
 
 Давай попробуем объединить два файла и вывести их на экран:
-{cat_second_example}
+![cat second example](imgs/cat_second_example.png)
 
 <hr>
 
@@ -51,12 +51,16 @@
 
 > Настройка числа строк в iTerm 2. Есть опция неограниченного числа строк (unlimited srollback), но в нашем случае это не панацея
 
+>![iTerm2 scrollback lines settings](imgs/scrollback_lines.png)
+
 Давай попробуем `head` в деле. Для начала сделаем файл с несколькими строками:
-{create multilines file}
+![create multilines file](imgs/create_multilines_file.png)
 Вначале объединим два наших файла и вывод утилиты `cat` направим в новый файл. Затем добавим новую строку при помощи команды `echo`.
 
 Проверим содержимое файла:
-{check multilines file}
+
+![check multilines file](imgs/check_multilines_file.png)
 
 Затем глянем в `man head`:
-{man head}
+
+![create multilines file](imgs/man\ head.png.png)
