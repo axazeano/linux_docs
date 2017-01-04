@@ -48,6 +48,9 @@
 <hr>
 
 ### :arrow_down_small: `head`
+
+![how head works](imgs/how_head_works.png)
+
 Эта утилита выводит несколько первых строк из файла. Просто и удобно. Зачем это нужно, скажешь ты? Допустим, у нас есть файл, причем файл довольно объемный, мегабайт так на 50. При помощи `cat` его не просмотришь, он просто не влезет в консоль (да да, вывод в консоль ограничивается некоторым числом строк, число выставляется в настройках эмулятора терминала) и будет показан только его конец.
 
 
@@ -116,7 +119,9 @@
 `If count is omitted it defaults to 10.` - Если число строк не указано, будет использованно значение по-умолчанию равное 10. 
 Ага, если мы пропускаем второй блок, и не указываем число строк или число байт, то по-умолчанию выводятся первые десять строк.
 
-`If more than a single file is specified, each file is preceded by a header consisting of the string ``==> XXX <=='' where ``XXX'' is the name of the file.` - Если указанно более одного файла, каждый файл будет начинаться со строки вида `==> XXX <==`, где `XXX` - имя файла. Ну, сделанно это явно для удобства. {head_multiline_files}
+`If more than a single file is specified, each file is preceded by a header consisting of the string ``==> XXX <=='' where ``XXX'' is the name of the file.` - Если указанно более одного файла, каждый файл будет начинаться со строки вида `==> XXX <==`, где `XXX` - имя файла. Ну, сделанно это явно для удобства.
+
+![head_multifiles](imgs/head_multifile.png)
 
 **EXIT STATUS**
 
